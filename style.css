@@ -1,0 +1,41 @@
+body{
+background-color: whitesmoke;
+}
+body{
+    background-image: url("anh.jpg");
+}
+.credit{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+
+.search{
+    width: 800px;
+    height: 25px;
+    border-color: gray;
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-bottom: 70px;
+
+}
+
+.button{
+    margin-left: 610px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.lang{
+   text-align: center;
+   font-size: 20px;
+   color: azure;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 80px;
+}
