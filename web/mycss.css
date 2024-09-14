@@ -1,0 +1,194 @@
+/* *{
+    margin:0;
+    padding:0;
+    border:none;
+    box-sizing: border-box;
+} */
+/* set menubar */
+.top-menubar {
+
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* set icon position */
+.icon-menutop {
+    margin-left: 10px;
+}
+
+.menubar-top-item:hover>span {
+    border-bottom: 2px solid green;
+}
+
+/* set item in menubar */
+.menubar-top-item {
+    margin: 0 24px;
+}
+
+.menubar-top-item>span {
+    padding: 8px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* hover in sign button */
+.sign-btn {
+    background-color: #027E6F;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+.sign-btn:hover {
+    background-color: #014C43;
+}
+
+/* effec hover block contain an arrow */
+.nav-btn:hover .e-arrow {
+    transform: translateX(10px);
+
+}
+
+.e-arrow {
+    margin-left: 10px;
+    transition: transform 0.3s linear;
+}
+
+/* font for heading*/
+.heading-font {
+    font-family: sans-serif;
+    color: #1f243c
+}
+
+/* size and color content */
+.adjust-content {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #1f243c
+}
+
+.hover-text:hover {
+    border-bottom: 2px solid #027E6F;
+}
+
+.text {
+    color: #027E6F
+}
+
+.feature-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.feature-div {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.feature-div-secondpage {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    font-size: 16px;
+}
+
+.font-h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #1f243c
+}
+
+/* effec scroll images */
+.marquee {
+
+    justify-content: center;
+    animation: move linear 20s infinite;
+
+
+}
+
+.holding-signbtn:hover {
+    border-color: #027E6F;
+    border-width: 2px;
+}
+
+.holding-signbtn {
+    border-width: 1px;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* sticky effect */
+.sticky {
+    position: sticky;
+    bottom: 10px;
+    top: 10px;
+}
+
+#Explore-feature:hover>span {
+    color: #027E6F;
+}
+
+#Explore-feature-1 {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+}
+
+#Explore-feature-2 {
+    
+    background-color: #027E6F;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.img-marquee {
+    width: 20vw;
+    object-fit: cover;
+    padding: 12px
+}
+
+#hoveer:hover {
+    border-color: white !important;
+    border-radius:5px ;
+}
