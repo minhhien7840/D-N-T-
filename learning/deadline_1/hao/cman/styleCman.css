@@ -1,0 +1,172 @@
+:root {
+    --main_color_header:  #0a645f36;
+    --main_color_body: rgba(4, 126, 0, 0.712);
+    --main_color_truyen: rgba(3, 48, 1, 0.486);
+  --main_color_highlight: #1FD9CE;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* hight chữ */
+.highlightP {
+    color: var(--main_color_highlight);
+}
+/* hight nút */
+.highlightB {
+    background-color: var(--main_color_highlight);
+    color: white;
+}
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.right {
+    padding-right: 50px;
+    text-align: right;
+}
+
+/* header----- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0a645f36;
+    display: flex;
+    justify-content: space-between;
+    /* Đẩy các phần tử ra hai bên của header */
+    align-items: center;
+    /* Căn giữa các phần tử theo chiều dọc */
+    padding: 10px 20px;
+    /*trái phải 10 trên dưới 20 */
+    width: 100%;
+    box-sizing: border-box;
+    /* Đảm bảo padding và border được tính vào tổng chiều rộng */
+    overflow: hidden;
+}
+
+body {
+    background-image: url('img/zerotwo.jpg');
+    background-size: cover;
+    /* background-color: var(--main_color_body); */
+    color: white;
+    padding-top: 80px;
+}
+
+/* logo */
+header .logo {
+    font-size: 24px;
+    color: yellow;
+}
+
+/* Danh sách đăng ký/đăng nhập */
+.dk_dn {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Sắp xếp các mục theo hàng ngang */
+    gap: 15px;
+    /* Khoảng cách giữa các mục */
+}
+
+/* Định dạng cho các mục trong danh sách */
+.dk_dn li {
+    color: white;
+    cursor: pointer;
+}
+
+/* .dk_dn li:hover {
+    text-decoration: underline;
+}
+*/
+/* body------ */
+/* list */
+.lineNgang {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Sắp xếp các mục theo hàng ngang */
+    gap: 15px;
+    /* Khoảng cách giữa các mục */
+}
+
+/* vị trí của trang */
+.vi_tri_trang {
+    display: flex;
+    gap: 15px;
+}
+
+/* body truyen */
+.container {
+    display: flex;
+    justify-content: center; /*ngang*/
+    align-items: center; /*dọc*/
+}
+.body_truyen {
+    width: 1300px;
+    height: 1025px;
+    background-color: var(--main_color_truyen);
+    padding: 40px 40px;
+}
+
+/* combo tên và các loại thẻ */
+.body_truyen1 {
+    display: flex;
+    /* justify-content: center;  */
+}
+
+.combo_the {
+    margin-left: 15px ;
+}
+.order_name {
+    color: yellow;
+}
+table.thuoc_tinh_truyen  {
+width: 100%;
+}
+table.thuoc_tinh_truyen td {
+    padding-right: 50px;
+}
+/* phần các chapter của truyện */
+.body_truyen3 {
+    width: 100%;
+}
+.head_dschuong {
+    display: flex;
+    justify-content: space-between;
+
+}
+#nhapchapter {
+    background-color: var(--main_color_truyen);
+}
+table.thuoc_tinh_chapter {
+    padding-top: 10px;
+    width: 100%;
+    /* không có 2 line */
+    border-collapse:collapse;
+    
+}
+.so_chapter {
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.so_chapter::-webkit-scrollbar-thumb {
+    background: var(--main_color_highlight);
+}
+.so_chapter::-webkit-scrollbar-track {
+    background: var(--main_color_highlight);
+}
+table.thuoc_tinh_chapter  thead, table.thuoc_tinh_chapter  tr {
+    border: 1px solid #1FD9CE;
+    
+    }
+    table.thuoc_tinh_chapter th, table.thuoc_tinh_chapter td {
+        padding: 10px 10px;
+    }

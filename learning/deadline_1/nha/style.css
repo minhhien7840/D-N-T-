@@ -1,0 +1,160 @@
+/*Link fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Taoj biến để dùng lại nhiều lần được*/
+:root {
+    --primary-color: #e18829;
+}
+
+/*Reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*Chiều cao toàn màn hình*/
+    height: 100vh;
+    font-family: "Poppins";
+    background-image: linear-gradient(to right, #e18829, #eaf7f6);
+
+}
+
+.card {
+    margin: 150px auto;
+    width: 380px;
+    height: 530px;
+    background-color: rgb(34, 29, 29);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+.card__like,
+.card__cart {
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+
+}
+
+.card__cart {
+    left: unset;
+    right: 20px;
+}
+
+.card__img {
+    width: 90%;
+    transition: 0.5s;
+
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    /*Giúp ảnh khi vào khung chứa thì ko bị biến dạng*/
+    object-fit: cover;
+}
+
+.card__title,
+.card__price {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card__title {
+    color: var(--primary-color);
+}
+
+.card__color,
+.card__wireType {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card__wireType span {
+    padding: 1px 6px;
+    background-color: #dadada;
+    color: black;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.card__color span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.card__color--gold {
+    background-color: rgb(192, 137, 10);
+}
+
+.card__color--titan {
+    background-color: rgb(89, 90, 93);
+}
+
+.card__color--silver {
+    background-color: rgb(227, 222, 209);
+}
+
+.card__action button {
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    color: rgb(17, 17, 17);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.card:hover .card__img {
+    transform: translateY(-80px);
+}
+
+.card:hover .card__title {
+    transform: translate(-0.5px,-70px);
+}
+
+.card:hover .card__price {
+    transform: translate(1.5px, -70px);
+}
+
+.card__wireType {
+    margin-top: 150px;
+}
+
+/*Ẩn*/
+.card__wireType,
+.card__color,
+.card__action {
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    /* transition-delay: 0.1s; */
+}
+
+.card:hover .card__wireType,
+.card:hover .card__color,
+.card:hover .card__action {
+    visibility: visible;
+    opacity: 100;
+}
+
+.card:hover .card__wireType{
+    margin-top: -20px;
+}
+
+.card__action button:hover {
+	transform: scale(0.9);
+}
+
+
