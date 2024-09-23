@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ROCK PAPER SCISSOR Game</title>
+        <meta charset="utf-8">
+        <link href="dl2.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <p id="title">ROCK PAPER SCISSOR</p>
+
+       <!--Button-->
+       <div class="selection">
+        <button type="button" id="rock" onclick="rule(0)">👊</button>
+        <button type="button" id="paper" onclick="rule(1)">🖐️</button>
+        <button type="button" id="scissor" onclick="rule(2)">✌️</button>
+       </div>
+
+       <!-- Choice -->
+        <div class="text">
+            <p id="player">Player choice: </p>
+            <p id="com">Computer choice: </p>
+            <p id="rs">Result:</p> 
+        </div>
+
+        <!--Reset button-->
+        <div class="reset">
+            <button type="button" id="reset" onclick="reset()">Reset</button>
+        </div>
+
+        <script src="dl2.js"></script>
+    </body>
+
+</html>
