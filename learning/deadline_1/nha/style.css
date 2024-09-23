@@ -146,6 +146,7 @@ body {
 .card:hover .card__color,
 .card:hover .card__action {
     visibility: visible;
+    /*Điều chỉnh độ trong suốt của phần tử*/
     opacity: 100;
 }
 

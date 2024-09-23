@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(242, 210, 171), rgb(226, 180, 87));
+    /* Sử dụng flexbox để căn giữa */
+    display: flex;
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+.card {
+    background-color: white;
+    width: 560px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    /* Tăng kích thước theo tỷ lệ */
+    transform: scale(1.4);
+    /* Tăng kích thước 120% */
+
+
+}
+
+.card__parameter,
+.card__button,
+.card__text {
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+.card__parameter {
+    text-align: left;
+    font-weight: 500;
+    display: flex;
+    /* Sử dụng flexbox để sắp xếp các span theo hàng ngang */
+    gap: 20px;
+    /* Khoảng cách giữa các thẻ span */
+}
+
+.card__parameter span {
+    transition: 0.5s;
+
+}
+
+.card__button {
+    display: flex;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.card__button button {
+    background-color: rgb(242, 172, 92);
+    border: 3px solid rgb(240, 151, 8);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.card__text {
+    background-color: black;
+    color: white;
+
+}
+
+.card__button :hover {
+    transform: scale(0.93);
+}
+
+.monster__infor {
+    background-color: red;
+    /* Red background */
+    color: white;
+    /* White text */
+    padding: 1.5px;
+    /* Some padding around the text */
+}
+
+#inventoryButton {
+    background-color: white;
+    /* Màu nền khác cho nút Inventory */
+    color: black;
+    border: 3px solid black(245, 42, 42);
+    border-radius: 5px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.card__parameter :hover {
+    transform: scale(0.93);
+}
