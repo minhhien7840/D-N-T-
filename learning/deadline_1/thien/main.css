@@ -49,30 +49,25 @@ html, body {
 
 h1 {
     font-size: 50px;
-    color: rgb(5, 5, 5); /* Màu chữ trắng để nổi bật trên nền ảnh */
+    color: rgb(5, 5, 5);
     margin-bottom: 1px;
 }
 
 .subtitle {
     font-size: 28px;
-    color: #3f3f3f; /* Màu chữ nhạt hơn cho phần tiêu đề phụ */
+    color: #3f3f3f;
     margin-bottom: 10px;
-}
-.description {
-    font-size: 14px;
-    line-height: 1.5;
-    color: white; /* Màu chữ trắng */
 }
 
 .content {
     max-width: 1000px;
     padding: 5px;
-    text-align: left; /* Đoạn văn bản nằm giữa */
+    text-align: left;
 }
 
 .content p {
     font-size: 28px;
-    color: #333; /* Màu chữ đen */
+    color: #333;
     line-height: 1.6;
 }
 
@@ -82,7 +77,7 @@ h1 {
 }
 
 .ytb img {
-    width: 100%;  /* Hình ảnh sẽ chiếm toàn bộ chiều rộng của khung */
+    width: 100%;
     max-width: 750px;
     height: auto;
 }
@@ -92,13 +87,6 @@ h1 {
     color: #333;
     margin-top: 10px;
     font-weight: bold;
-}
-
-.description {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.1rem;
-    color: #333;
 }
 
 .song-title {
