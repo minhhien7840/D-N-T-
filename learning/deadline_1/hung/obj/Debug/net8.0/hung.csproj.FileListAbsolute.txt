@@ -1,0 +1,15 @@
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\bin\Debug\net8.0\hung.exe
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\bin\Debug\net8.0\hung.deps.json
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\bin\Debug\net8.0\hung.runtimeconfig.json
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\bin\Debug\net8.0\hung.dll
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\bin\Debug\net8.0\hung.pdb
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\hung.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\hung.AssemblyInfoInputs.cache
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\hung.AssemblyInfo.cs
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\hung.csproj.CoreCompileInputs.cache
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\hung.sourcelink.json
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\hung.dll
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\refint\hung.dll
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\hung.pdb
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\hung.genruntimeconfig.cache
+D:\vs_src\DUANTYDO\learning\deadline_1\hung\obj\Debug\net8.0\ref\hung.dll
