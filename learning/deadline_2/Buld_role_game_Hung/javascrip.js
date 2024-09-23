@@ -112,7 +112,7 @@ const count = 0;
 //  
 function goTown() {
     document.getElementById("btn_0").disabled = false;
-            document.getElementById("btn_1").disabled = false;
+    document.getElementById("btn_1").disabled = false;
     document.getElementById("board_monster").style.display = "none";
     description_text.innerText = 'You are in the town square. You see a sign that says "Store".';
     for (let i = 0; i < l_btn.length; i++) {
@@ -200,7 +200,7 @@ function changeToFight(name) {
 
     document.getElementById("monster_name").innerText = name;
 
-    let monster=getMonster(name);
+    let monster = getMonster(name);
 
     document.getElementById("health_monster").innerText = monster.hp;
 
@@ -222,15 +222,19 @@ function changeToFight(name) {
         }
     }
 }
-
+// it's have 2 types attack or dodge
 function fightType(type, name) {
 
     let dametaken = 0;
-    let monster=getMonster(name);
+    let monster = getMonster(name);
     dametaken = monster.attack;
     if (inventory[inventory.length - 1].durability > 0) {
         inventory[inventory.length - 1].durability -= 1;
         number = 1;
+    }
+    if (type == "dodge" && monster.hp > 0) {
+        console.log(1)
+        description_text.innerText = "you dodge compleleted an attack !"
     }
     if (type === "attack") {
         if (30 + inventory[inventory.length - 1].atk > monster.def) {
@@ -241,19 +245,19 @@ function fightType(type, name) {
             health_monster_textext.innerText = monster.hp;
             xp += 20;
             xp_text.innerText = xp;
-            gold+=20;
-            gold_text.innerText=gold;
+            gold += 20;
+            gold_text.innerText = gold;
         } else {
-            monster.hp -= (xp+30 + inventory[inventory.length - 1].atk);
+            monster.hp -= (xp + 30 + inventory[inventory.length - 1].atk);
             if (monster.hp > 0) {
                 description_text.innerText = "You hit the monster! It has " + monster.hp + " HP left.";
             } else {
                 description_text.innerText = "It has 0 HP left.you get 20 XP and 20 golds";
                 xp += 20;
                 xp_text.innerText = xp;
-                gold+=20;
-                gold_text.innerText=gold;
-                
+                gold += 20;
+                gold_text.innerText = gold;
+
             }
         }
 
@@ -276,13 +280,7 @@ function fightType(type, name) {
             }
         }
 
-    } else {
-        if (hp_monster_textext > 0) {
-            document.getElementById("description").innerText = "you dodge compleleted an attack !"
-        }
     }
-
-
 }
 
 function buyHealth() {
@@ -292,11 +290,11 @@ function buyHealth() {
         health += 10;
         gold_text.innerText = gold;
         hp_text.innerText = health;
-    } else if(inventory.length==3){}else{ description_text.innerText = "not enought gold to buy"; }
+    } else if (inventory.length == 3) { } else { description_text.innerText = "not enought gold to buy"; }
 }
-
+// button at position 1 for buy health
 function buy_weapon() {
-    if (gold >= 30&& inventory.length<4) {
+    if (gold >= 30 && inventory.length < 4) {
         switch (inventory_text.length) {
             case 1:
                 let newWeapon = new Weapon('hammer', 3, 10, 10);
@@ -315,9 +313,9 @@ function buy_weapon() {
             default: break;
         }
         description_text.innerText = "Inventory: " + inventory_text.join(", ");
-    } else if(inventory.length>=3){
+    } else if (inventory.length >= 3) {
         description_text.innerText = "you already have the strongest weapon";
-    }else{
+    } else {
         description_text.innerText = "not enought gold to buy";
     }
 }
