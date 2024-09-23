@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    text-align: center;
 }
 
 .btn:hover {

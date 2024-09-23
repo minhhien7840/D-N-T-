@@ -1,0 +1,14 @@
+Deadline no.2:
+ 
+. Làm 1 trong 2 game theo yêu cầu, tham khảo:
+. https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/learn-basic-javascript-by-building-a-role-playing-game/step-173
+. https://github.com/NaGit09/JS.git
+HẠN CUỐI NỘP TRÊN GIT 20:59 23/09/2024
+. Tìm hiểu framework và đưa ý tưởng (gia hạn và chốt ở tuần 4)
+. Đưa ra ý tưởng figma
+HỌP BÁO CÁO 21h 23/09/2024
+freeCodeCamp.org
+Learn to Code — For Free
+GitHub
+GitHub - NaGit09/JS
+Contribute to NaGit09/JS development by creating an account on GitHub.

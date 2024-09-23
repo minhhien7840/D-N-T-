@@ -1,0 +1,96 @@
+.text_content{
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    margin: 0;
+}
+.text_size{
+    font-size: 20px;
+}
+.status_moster{
+    height: 30px;
+    display:none;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border: 5px;
+   padding:5px;
+   gap:15px;
+}
+.btn_option{
+    border: 2.4px;
+    border-color: #FEAC32;
+    background-image:  linear-gradient(#fecc4c, #ffac33);
+    padding: 1px 6px;
+    color:black;
+}
+#main_screen{
+    max-width: 500px;
+    background-color: white;
+    padding: 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.align{  
+    align-items: center;
+}
+
+.background_black{
+    background-color: black;
+}
+.color_black{
+    color:black
+}
+.padding20px{
+    padding: 20px ;
+}
+.padding5px{
+    padding: 5px ;
+}
+.padding10px{
+    padding: 10px ;
+}
+.padding_right{
+    padding-right: 20px;
+}
+.padding_t_b{
+    padding:5px 10px 5px 10px;
+}
+.justify{
+    justify-content: center;
+}
+.cover{
+    border: 1px solid black;
+    padding: 10px solid none;
+}
+.gap10px{
+    gap: 10px;
+}
+.flex_not_align{
+    display: flex;
+}
+.gap4px{
+    gap: 4px;
+}
+.margin_auto{
+    margin:auto
+}
+.button_hover:hover{
+    cursor: pointer;
+    color:#0056b3;
+}
+.justify_content{
+    height: 52%;
+}
+.display_block{
+    display: block;
+}
+.text_bold{
+    font-weight: bold;
+}
+#monster_bl{
+    background-color: red;
+}
