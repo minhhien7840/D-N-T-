@@ -34,7 +34,8 @@ obstacle.push({
     y: 0,
     width: 20,
     height: 50,
-    key: false
+    key: false,
+    pass : false
 })
 let vitribandau_imgvit = 0;
 let soluongkhung_imgvit = 12;
@@ -64,23 +65,27 @@ function animationvit() {
         vit.x = vit.x;
         vit.y = 50;
     }
-   
+
     //vịt rơi
     vit.y += 1;
     //thay đổi vịt đi tới
-    // vit.x += 0.5;
+    // vit.x += 0.2;
     drawvit();
     // if (vit.x == canvas.width) {
     //     endGame();
     // }
 }
 //vit va chạm
-function isColliding(obj1, obj2) {
-    //nếu obj 1 nằm trong khoảng bé hơn x của obj 2 và lớn hơn x + độ rộng cột của obj 2 thì true
-    return (obj1.x < obj2.x + obj2.width &&
-        obj1.x + obj1.width > obj2.x &&
-        obj1.y < obj2.y + obj2.height &&
-        obj1.y + obj1.height > obj2.y);
+function isColliding(pet, obj1, obj2) {
+    if (pet.x + pet.width >= obj1.x && pet.x + pet.width <= obj1.x + obj2.width) {
+        if (pet.x >= obj1.x && pet.x + pet.width < obj1.x + obj1.width
+            && pet.y < obj1.y + obj1.height)
+            return false;
+        if (pet.x + pet.width >= obj2.x && pet.x + pet.width <= obj2.x + obj2.width
+            && pet.y + pet.height > obj2.y)
+            return false;
+    }
+    return true;
 }
 //ve obstacle
 function drawobstacle() {
@@ -91,21 +96,23 @@ function drawobstacle() {
         context.drawImage(obstacle1, curobs.x, curobs.y,
             curobs.width, curobs.height);
         context.drawImage(obstacle2, curobs.x, curobs.y + curobs.height + disObs12,
-            curobs.width,  canvas.height - curobs.height - disObs12);
+            curobs.width, canvas.height - curobs.height - disObs12);
         // obstacle di chuyễn
         curobs.x -= rate;
         //////////////////////
-
-        if (curobs.x <= canvas.width/3 && Math.random() < 1 && Math.random() > 0.1
-            && obstacle.length < 5) {
-            let randomHeight = Math.floor(Math.random() * (canvas.height / 2))
+        let random = Math.random();
+        if ((curobs.x) <= (canvas.width / 3) * 2 && curobs.pass==false) {
+            curobs.pass = true;
+            let randomHeight = Math.floor(random * (canvas.height / 2))
             obstacle.push({
                 x: canvas.width,
                 y: 0,
                 width: 20,
                 height: randomHeight,
-                key: false
+                key: false,
+                pass:false
             })
+           
         }
         if (curobs.x + curobs.width <= vit.x && !curobs.key) {
             score += 10;
@@ -124,12 +131,14 @@ function drawobstacle() {
             width: curobs.width,
             height: canvas.height - curobs.height - disObs12
         };
-        if (!isColliding(vit, obstacleTop) || !isColliding(vit, obstacleBottom)) {
+        //end
+        if (isColliding(vit, obstacleTop,obstacleBottom)==false) {
             endGame();
         }
         // cắt khi chạm biên
         if (curobs.x + curobs.width < 0) {
-            obstacle.splice(0, 1);
+            obstacle.splice(index, 1);
+            index--;
         }
     }
 }
@@ -145,7 +154,7 @@ function draw() {
     context.drawImage(mapimg, 0, 0, canvas.width, canvas.height);
     animationvit();
     drawobstacle();
-    // updateRate();
+    updateRate();
 }
 //end
 function endGame() {
@@ -153,15 +162,16 @@ function endGame() {
     document.location.reload();
 }
 //khởi chạy canvas làm mới khi có thay đổi 
+//bấm để nhảy
+document.addEventListener("keydown", function () {
+    vit.y -= 25;
+});
 function run() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     draw();
     requestAnimationFrame(run);
 }
- //bấm để nhảy
- document.addEventListener("keydown", function () {
-    vit.y -=25;
-});
+
 run();
 console.log("width" + canvas.width)
 console.log("height" + canvas.height)
