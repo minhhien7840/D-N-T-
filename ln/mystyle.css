@@ -1,0 +1,12 @@
+.disc {
+    list-style-type: disc; /* Default solid bullet */
+  }
+  .circle {
+    list-style-type: circle; /* Open circle */
+  }
+  .square {
+    list-style-type: decimal; /* Filled square */
+  }
+  .none {
+    list-style-type: none; /* No bullet */
+  }
