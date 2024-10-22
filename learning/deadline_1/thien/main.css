@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Playfair Display', serif;
+    background-color: #e7bcee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* Đảm bảo trang ít nhất cao bằng chiều cao màn hình */
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Chặn cuộn ngang */
+}
+
+.bia {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/559/101/non_2x/abstract-gradient-purple-circular-overlapping-vector.jpg');
+    background-size: cover; /* Ảnh phủ toàn bộ khung */
+    background-position: center; /* Đặt ảnh ở trung tâm */
+    border-radius: 10px;
+    display: flex;
+    max-width: 1000;
+    width: 100%;
+    padding-top: 20px;
+    position: relative; /* Cho phép profile nổi ra khỏi khung */
+    margin-top: 50px;
+    margin-bottom: 20px; /* Khoảng cách giữa card và đoạn văn */
+}
+
+.avt img {
+    width: 150px;
+    height: 130px;
+    object-fit: cover;
+    border: 5px solid rgb(195, 140, 239);
+    border-radius: 10px;
+    position: absolute;
+    top: -30px; /* Để ảnh profile nổi lên phía trên khung */
+    left: -20px; /* Đặt profile ở bên trái */
+}
+
+.intro {
+    margin-left: 150px; /* Để phần chữ nằm sau ảnh profile */
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(5, 5, 5);
+    margin-bottom: 1px;
+}
+
+.subtitle {
+    font-size: 28px;
+    color: #3f3f3f;
+    margin-bottom: 10px;
+}
+
+.content {
+    max-width: 1000px;
+    padding: 5px;
+    text-align: left;
+}
+
+.content p {
+    font-size: 28px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.ytb {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ytb img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+}
+
+.caption {
+    font-size: 28px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.song-title {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.lyrics {
+    text-align: left;
+    width: 60%;
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}

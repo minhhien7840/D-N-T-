@@ -1,0 +1,47 @@
+
+#title{
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.selection, .reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#player, #com, #rs{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+
+#scissor, #rock, #paper{
+    background-color: grey;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 60%;
+    cursor: pointer;
+    font-size: 40px;
+    border: black, 2px, solid;
+}
+
+#reset{
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: black, 2px, dotted;
+    background-color: darksalmon;
+}
+

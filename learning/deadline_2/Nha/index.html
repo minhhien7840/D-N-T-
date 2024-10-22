@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <!-- Thẻ chứa thông số -->
+        <div class="card__parameter">
+            <span id="xp">XP: </span>
+            <span id="health">Health: </span>
+            <span id="gold">Gold: </span>
+        </div>
+        <!-- Thẻ chứa các button -->
+        <div class="card__button">
+            <button onclick="goToStore()">Go to store</button>
+            <button onclick="goToCave()">Go to cave</button>
+            <!-- <button onclick="fightDragon()">Fight Dragon</button> -->
+        </div>
+        <!-- Thẻ chứa văn bản -->
+        <div class="card__text">
+            <p class="monster__infor">Monster name: &nbsp;&nbsp; Health: </p>
+            <p id="gameText">Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from
+                leaving the town. You are in the town square. Where do you want to go? Use the buttons above.".</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

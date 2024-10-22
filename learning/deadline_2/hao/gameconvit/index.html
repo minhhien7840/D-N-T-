@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>convit</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script>
+        function checkCanvasSupport() {
+            const canvas = document.createElement('canvas');
+            const isSupported = !!(canvas.getContext && canvas.getContext('2d'));
+            if (isSupported) {
+                console.log("Canvas is supported.");
+            } else {
+                console.log("Canvas is not supported.");
+            }
+        }
+
+        checkCanvasSupport();
+    </script>
+</head>
+<body>
+    <div id="score">score: 0</div>
+ <canvas id="gamezone"></canvas>
+
+ 
+</body>
